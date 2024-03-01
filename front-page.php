@@ -1,9 +1,4 @@
 <?php get_header();
-
-
-echo 'asdfg';
-
-// echo "<p>car1:".$carousel1." </p>";
 ?>
 
 <style>

@@ -1,11 +1,5 @@
 <?php get_header(); ?>
 
-<div class="pageTitle">
-    <h1>
-        <?php the_title(); ?>
-    </h1>
-</div>
-
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
