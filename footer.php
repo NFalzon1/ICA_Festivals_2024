@@ -10,7 +10,7 @@ if ($footer_bg == "light") {
 
 $footer_text = get_theme_mod("custom_theme_footer_text", "ffffff");
 
-$footer_layout = get_theme_mod('custom_footer_widget_count', '2');
+$footer_layout = get_theme_mod('custom_footer_widget_count', '3');
 $sidebars_active = false;
 for ($i = 0; $i < $footer_layout; $i++) {
   if (is_active_sidebar('footer-sidebar-' . ($i + 1))) {

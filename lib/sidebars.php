@@ -1,5 +1,4 @@
 <?php
-
 function classExample_sidebar_widgets()
 {
     register_sidebar(
@@ -62,7 +61,7 @@ function classExample_sidebar_widgets()
 
 function custom_footer_sidebars()
 {
-    $footer_layout = get_theme_mod('custom_footer_widget_count', '2');
+    $footer_layout = get_theme_mod('custom_footer_widget_count', '3');
     for ($i = 0; $i < $footer_layout; $i++) {
         register_sidebar(array('id' => 'footer-sidebar-' . ($i + 1), 'name' => 'Footer Sidebar ' . ($i + 1), 'description' => 'Footer Widgets Section', 'before_widget' => '<section id="%1$s" class="footer-widget %2$s">', 'after_widget' => '</section>'));
     }
