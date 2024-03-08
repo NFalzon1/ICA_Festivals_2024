@@ -24,13 +24,14 @@
                 <button class="navbar-toggler navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <?php
                     // Display the WordPress navigation menu
                     wp_nav_menu(array(
                         'theme_location' => 'primary-menu',
                         'container'      => false,
                         'menu_class'     => 'navbar-nav ml-auto',
+                        'add_li_class'   => 'nav-item',
                     ));
                     ?>
                 </div>
