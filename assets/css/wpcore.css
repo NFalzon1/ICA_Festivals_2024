@@ -1,3 +1,22 @@
+/* Fonts set by Julian */
+/* Primary typeface for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "rotunda-variable",sans-serif;
+  font-variation-settings: 'wght' 400;
+}
+
+/* Secondary typeface for paragraphs */
+p {
+  font-family: "sole-serif-small-variable",sans-serif;
+  font-variation-settings: 'wght' 200, 'opsz' 0;
+}
+
+/* Secondary typeface set manually for navigation buttons */
+.navbar-nav {
+  font-family: "rotunda-variable",sans-serif;
+  font-variation-settings: 'wght' 400;
+}
+
 .navbar-nav {
   display: flex;
   width: 100%;
