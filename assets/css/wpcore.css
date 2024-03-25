@@ -1,6 +1,17 @@
-/* Fonts set by Julian */
+/* Fonts set by Julian*/
+
+
+[data-bs-theme=light] {
+  /* Colours set by Julian */
+  /* Primary Default Colour */
+  --bs-primary: #111111;
+
+  /* Primary Secondary Colour */
+  --bs-secondary: #bfbfbf;
+}
+
 /* Primary typeface for headings */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, a {
   font-family: "rotunda-variable",sans-serif;
   font-variation-settings: 'wght' 400;
 }
@@ -9,28 +20,28 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: "sole-serif-small-variable",sans-serif;
   font-variation-settings: 'wght' 200, 'opsz' 0;
+  /* background-color: "bs-primary"; */
+  color: #fff;
 }
 
-/* Secondary typeface set manually for navigation buttons */
-.navbar-nav {
-  font-family: "rotunda-variable",sans-serif;
-  font-variation-settings: 'wght' 400;
+/* navbar  */
+.navbar {
+  background-color: none;
 }
 
 .navbar-nav {
   display: flex;
+  justify-content: end;
   width: 100%;
 }
 
 .navbar-nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: end;
     /* padding-left: 700px; */
     margin-top: 10px;
     width: 100%;
     list-style: none;
-
 }
 
 .navbar ul li h6 {
@@ -57,14 +68,43 @@ p {
   /* color: white; */
 }
 
+/* Events Button */
+#menu-item-119 {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #000000;
+  border-radius: 14px;
+  width: 120px;
+  height: 67px;
+}
+
+#menu-item-119 a {
+  display: flex;
+  justify-content: center;
+}
+
 .theme-main-menu{
   display: flex;
 }
 
+/* Footer */
+.footer {
+  width: 100%;
+  padding-left: 100px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.row {
+  display: flex;
+}
+
+/* Mobile View */
 @media only screen and (max-width: 600px) {
+  /* Navbar */
   .navbar-nav ul {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
@@ -77,6 +117,35 @@ p {
     flex-direction: row;
     justify-content: space-evenly;
   }
+
+  /* Events Button */
+  #menu-item-119 {
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+    width: 120px;
+  }
+
+  /* Footer */
+  .footer {
+    width: 100%;
+    padding-left: 0px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  body .is-layout-flex {
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 

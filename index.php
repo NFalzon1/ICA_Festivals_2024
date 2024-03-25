@@ -18,17 +18,8 @@
         endwhile;
       endif;
       ?>
-
-      <p>
-        <?php //the_content();//
-        // the_excerpt();
-        ?>
-      </p>
-
     </div>
-    <div class="col4">
-      <!-- Prepped for Sidebar -->
-    </div>
+
   </div>
 </div>
 

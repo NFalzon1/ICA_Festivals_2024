@@ -1,14 +1,9 @@
 <?php
-$footer_bg = get_theme_mod('custom_footer_bg', 'dark');
-$footer_backgroundcolour = get_theme_mod("custom_theme_footer_bg", "#ffc107");
-$footer_class = "bg-" . $footer_bg;
 
-$footer_text = "text-light";
-if ($footer_bg == "light") {
-  $footer_text == "text-dark";
-}
+$footer_backgroundcolour = get_theme_mod("custom_footer_bg", "#171717");
 
-$footer_text = get_theme_mod("custom_theme_footer_text", "ffffff");
+
+
 
 $footer_layout = get_theme_mod('custom_footer_widget_count', '3');
 $sidebars_active = false;
@@ -18,7 +13,10 @@ for ($i = 0; $i < $footer_layout; $i++) {
   }
 }
 if ($sidebars_active):
-  echo "<div class='container-fluid'><div class='row footer-css'>";
+  ?>
+  <footer class="footer" style='background-color:<?php echo $footer_backgroundcolour ?>;'>
+    <?php
+  echo "<div class='container-fluid'><div class='row footer-css' >";
   for ($i = 0; $i < $footer_layout; $i++):
     echo "<div class='col'>";
     if (is_active_sidebar('footer-sidebar-' . ($i + 1))) {
@@ -26,15 +24,15 @@ if ($sidebars_active):
     }
     echo "</div>";
   endfor;
-  echo "</div></div>";
+  echo "</div></div></div>";
 endif;
 ?>
 
 
-<div class="container-fluid-w100 footerStyle <?php echo $footer_class . "" . $footer_text ?>">
+<div class="container-fluid-w100 footerStyle <?php echo $footer_class . "" . $footer_text ?>" >
 
 </div>
-<div class='container-fluid' style='background-color:<?php echo $footer_backgroundcolour ?>;'>
+<div class='container-fluid' >
 <?php wp_footer(); ?>
 </div>
 

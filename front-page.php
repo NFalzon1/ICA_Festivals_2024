@@ -18,15 +18,6 @@
       endwhile;
     endif;
     ?>
-
-    <p>
-      <?php //the_content();//
-      // the_excerpt();
-      ?>
-    </p>
-
-
-
   </div>
 </div>
 

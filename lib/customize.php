@@ -30,6 +30,20 @@ function custom_customize_register($wp_customize)
     )
     );
 
+    $wp_customize->add_setting('custom_footer_bg', array(
+        'default' => '#171717',
+    )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control($wp_customize, 'custom_footer_bg', array(
+            'label' => 'Choose the background colour of the footer',
+            'section' => 'custom_footer_options',
+            'settings' => 'custom_footer_bg'
+        )
+        )
+    );
+
 
 
     $wp_customize->add_section('custom_gen_options', array(
