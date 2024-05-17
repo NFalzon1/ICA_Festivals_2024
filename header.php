@@ -39,6 +39,14 @@ $socials = [
 
     <!-- Sole Serif is used for paragraphs -->
     <link rel="stylesheet" href="https://use.typekit.net/gaa4itz.css">
+
+    <!-- Add Lightbox2 CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+<!-- Add Lightbox2 JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
 </head>
 
 <!-- Header made by Julian -->
@@ -52,7 +60,7 @@ $socials = [
                 </a>
 
                 <!-- Toggle hamburger menu in mobile view -->
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler navbar-light " type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
